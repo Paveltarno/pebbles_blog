@@ -1,0 +1,19 @@
+@import "bootstrap";
+
+$theme-main: #3FD487;
+
+.main-header{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 24px;
+  text-align: left;
+  background-color: $theme-main;
+
+  h1{
+    color: #FFF;
+  }
+
+  p{
+    color: $gray-lighter;
+  }
+}
