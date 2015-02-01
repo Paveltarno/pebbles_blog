@@ -1,10 +1,9 @@
-@import "bootstrap";
-
 $theme-main: #3FD487;
 
 .main-header{
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-bottom: 40px;
   font-size: 24px;
   text-align: left;
   background-color: $theme-main;
@@ -16,4 +15,16 @@ $theme-main: #3FD487;
   p{
     color: $gray-lighter;
   }
+}
+
+.main-sidebar{
+
+  #logged-user{
+    color: darken($theme-main, 20%);
+
+    a{
+      color: darken($theme-main, 20%);
+    }
+  }
+
 }

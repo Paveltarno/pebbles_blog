@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -6,6 +7,10 @@ Rails.application.routes.draw do
   root 'posts#index'
 
   resource :posts
+
+  resource :session, only: [:create, :destroy, :new]
+
+  get 'admin_door' => 'sessions#new'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

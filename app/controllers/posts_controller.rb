@@ -1,8 +1,6 @@
 class PostsController < ApplicationController
 
   def index
-    #byebug
-    1 + 1
   end
 
   def show

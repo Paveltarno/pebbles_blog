@@ -1,0 +1,20 @@
+<div class="col-md-6 col-md-offset-3">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3>Log in</h3>
+    </div>
+    <div class="panel-body">
+      <div class="form-group">
+        <%= form_tag session_path do %>
+          <%= label_tag 'Name:', nil, class: "control-label" %>
+          <%= text_field_tag :name, nil, class: "form-control" %>
+          <br/>
+          <%= label_tag 'Password:' %>
+          <%= password_field_tag :password, nil, class: "form-control" %>
+          <br/>
+          <%= submit_tag 'Log in', class: "btn btn-success center-block" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

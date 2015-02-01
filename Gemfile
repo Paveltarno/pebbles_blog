@@ -36,6 +36,7 @@ gem 'thin'
 # gem 'capistrano-rails', group: :development
 
 gem 'bootstrap-sass'
+gem 'bcrypt', '~> 3.1.7'
 
 group :test do
   
@@ -56,6 +57,7 @@ group :development, :test do
 
   # The deployment version supports environment specific .env files. This helps testing on CI
   gem 'dotenv-deployment'
+  gem 'annotate', '~> 2.6.5'
 end
 
 gem 'rack-mini-profiler'
