@@ -1,0 +1,8 @@
+<% if signed_in? %>
+  <div>
+    <%= link_to new_posts_path, class: "btn btn-default" do %>
+      <span class="glyphicon glyphicon-plus"></span>
+New Post
+    <% end %>
+  </div>
+<% end %>

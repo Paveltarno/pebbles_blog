@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
 
   def destroy
     sign_out(current_user)
-    redirect_to root_path, flash: { success: "Logout successful" }
+    redirect_to root_path, flash: { success: "Logout successful." }
   end
 
   private
