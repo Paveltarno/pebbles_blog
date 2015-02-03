@@ -1,0 +1,6 @@
+<% if signed_in? %>
+  <div id="user-bar">
+    <%= yield :user_bar %>
+  </div>
+  <hr />
+<% end %>
