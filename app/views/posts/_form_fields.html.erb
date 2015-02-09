@@ -1,0 +1,13 @@
+<%= render "shared/errors", object: form.object %>
+
+<div class="form-group">
+  <%= form.text_field :title, class: "form-control", placeholder: "Title" %>
+</div>
+
+<div class="form-group">
+  <%= form.text_area :content, class: "form-control post-content-area", placeholder: "Write your content here. Keep it short and specific." %>
+</div>
+
+<div class="form-group">
+  <%= form.submit class: "btn btn-default" %>
+</div>
